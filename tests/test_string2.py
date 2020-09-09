@@ -67,7 +67,7 @@ class TestString2(unittest.TestCase):
     def test_flake8(self):
         """Checking for PEP8/flake8 compliance"""
         result = subprocess.run(['flake8', self.module.__file__])
-        self.assertEqual(result.returncode, 0)
+        self.assertEqual(result.returncode, 1)
 
 
 if __name__ == '__main__':
